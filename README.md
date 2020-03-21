@@ -13,7 +13,7 @@ Web scrape, EDA, pre-processing, and topic modeling using LDA for a client proje
 ----
 
 ## 2.0 Project Outline / Problem Statement
-Postcards for Parents, a digital parenting advice and community platform, was interested in learning if there were any gaps in there content, in terms of relevance for their users.  To this end, topic modeling was performed on a sample of posts from the reddit.com parenting group to identify the general topics of interest among this population.  These topics will then be reviewed against the client's content for gap analysis and will serve as a basis for possible product modification or extention.
+The client, a digital parenting advice and community platform, was interested in learning if there were any gaps in thier content, in terms of relevant topics for their users.  To this end, topic modeling was performed on a sample of posts from the reddit.com parenting group to identify the general topics of interest among this population and validate the client's topical strategy.  The resulting topics produced by the analysis will then be reviewed against the client's content for gap analysis and will serve as a basis for possible product modification or extention.
 
 To this end, Latent Dirichlet Allocation (LDA) will be leveraged to generate the topic clusters present in the reddit parenting posts.
 
@@ -23,11 +23,11 @@ The data in this analysis consists of forum posts obtained from reddit.com sub-r
 
 - r/parenting
 
-Approximately 102K submissions (i.e. unique posts) were obtained from posts made between 01 Jan 2015 and 31 Jan 2020.
+Approximately 103K submissions (i.e. unique posts) were obtained from posts made between 01 Jan 2015 and 31 Jan 2020.
 
 Post-processing dimensions:
 
-- 5,000 rows
+- 102,776 rows
 - 1,659 columns (i.e. this is the size of the LDA model "vocabulary")
 
 ### 3.1 Data Visualizations
@@ -53,6 +53,8 @@ The LDA topic model with N=12 (number of topics) performed best in terms of the 
 
 Interestingly, the overall performance of the 12-topic model vs. several of the others was not that different.  The 18-topic model, for example, also performed defensibly well, with the added potential bonus of more granular topic clusters (though not as cleanly separated, which could make classification modeling challenging, were that a next step in the client's business needs, which in this case, it was not).
 
+Please refer to the presentation included in the repo for more detail.
+
 ## 5.0 Summary of next steps
 - Cluster topics in client’s content modules
     - Compare topics across the two corpora
@@ -63,7 +65,7 @@ Interestingly, the overall performance of the 12-topic model vs. several of the 
 
 
 ## 6.0 Resources
-- www.postcardsforparents.com (client website)
+- client website (redacted to avoid searchability at the client's request).
 - www.reddit.com/r/parenting
 - https://scikit-learn.org/stable/modules/decomposition.html#latentdirichletallocation
 - Kapadia, “Topic Modeling in Python: Latent Dirichlet Allocation (LDA)”; https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0
